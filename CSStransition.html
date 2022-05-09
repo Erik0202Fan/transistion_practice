@@ -1,0 +1,93 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>CSS_transition</title>
+<style type="text/css">
+body {
+	width: auto;
+	display: flex;
+	flex-direction: column;
+}
+
+.box1 {
+	width: 200px;
+	height: 200px;
+	background-color: #2AFF77;
+	margin-bottom: 10px;
+	text-align: center;
+	-webkit-transition: all 250ms ease-in-out 0s;
+	-o-transition: all 250ms ease-in-out 0s;
+	transition: all 250ms ease-in-out 0s;
+	line-height: 200px;
+}
+.box2 {
+	width: 200px;
+	height: 200px;
+	background-color: #4562E8;
+	margin-bottom: 10px;
+	text-align: center;
+	-webkit-transition: all 250ms ease-in-out 0s;
+	-o-transition: all 250ms ease-in-out 0s;
+	transition: all 250ms ease-in-out 0s;
+	line-height: 200px;
+}
+
+.box3 {
+	width: 200px;
+	height: 200px;
+	background-color: #FF5D5F;
+	text-align: center;
+	line-height: 200PX;
+	-webkit-transition: all 250ms ease-in-out 0s;
+	-o-transition: all 250ms ease-in-out 0s;
+	transition: all 250ms ease-in-out 0s;
+}
+body p {
+	text-align: center;
+	font-size: 40px;
+	font-weight: 800;
+}
+.container {
+	margin-left: auto;
+	margin-right: auto;
+}
+.box3:hover {
+	font-size: 45px;
+	transform: scale(1.25);
+	-webkit-box-shadow: 1px 0px 16px 1px #787878;
+	box-shadow: 1px 0px 16px 1px #787878;
+	background-color: #FDE505;
+	-webkit-transform: scale(1.25);
+	-o-transform: scale(1.25);
+}
+.box1:hover {
+	transform: translateX(20px)
+	translateY(20px);
+	font-size: 45px;
+	background-color: #FDE505;
+	-webkit-box-shadow: 1px 1px 16px 2px #676565;
+	box-shadow: 1px 1px 16px 2px #676565;
+	-webkit-transform: translateX(20px) translateY(20px);
+	-o-transform: translateX(20px) translateY(20px);
+}
+.box2:hover {
+	font-size: 45px;
+	background-color: #FDE505;
+	transform: rotateZ(45deg);
+	-webkit-box-shadow: 1px 1px 15px 3px #808080;
+	box-shadow: 1px 1px 15px 3px #808080;
+	-webkit-transform: rotateZ(45deg);
+	-o-transform: rotateZ(45deg);
+}
+</style>
+</head>
+<p>CSS trainsition練習作業</p>
+<body>
+<div class="container">
+<div class="box1"> 位移</div>
+<div class="box2"> 旋轉</div>
+<div class="box3"> 縮放</div></div>
+
+</body>
+</html>
